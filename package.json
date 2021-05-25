@@ -31,7 +31,7 @@
     "private": false,
     "main": "index.js"
   },
-  "lastBuildTagHash": "d004b5da0cdf72182c89447f546577f8f7c0d803\nd004b5da0cdf72182c89447f546577f8f7c0d803",
+  "lastBuildTagHash": "5bbd3b62c13594372367e0ddb895a5682d36efaa\n5bbd3b62c13594372367e0ddb895a5682d36efaa",
   "name": "tnp-cli",
   "version": "0.0.4",
   "license": "MIT",
@@ -246,7 +246,7 @@
     "svg-png-converter": "0.0.9",
     "systeminformation": "^3.45.7",
     "task.js": "^0.1.5",
-    "tnp-cli": "~0.0.3",
+    "tnp-cli": "~0.0.4",
     "tnp-core": "~0.0.3",
     "tnp-db": "~0.0.21",
     "tnp-helpers": "~0.0.26",
