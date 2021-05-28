@@ -1,4 +1,4 @@
-import { Helpers } from 'tnp-config';
+import { Helpers } from 'tnp-core';
 if (Helpers.isBrowser) {
   console.log(`This package is only for node backend`);
 }
