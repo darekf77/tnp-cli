@@ -33,7 +33,7 @@
   },
   "lastBuildTagHash": "aae714727d2424e129e877b05ed24cc41edf75c9",
   "name": "tnp-cli",
-  "version": "0.0.24",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
