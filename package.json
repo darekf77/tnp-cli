@@ -31,7 +31,7 @@
     "private": false,
     "main": "index.js"
   },
-  "lastBuildTagHash": "20636e84c837012b7f5bf2f66f357985a983dd88",
+  "lastBuildTagHash": "7eac1563baf436ca3bf8ab7da4ea694078d02277",
   "name": "tnp-cli",
   "version": "2.0.6",
   "license": "MIT",
@@ -253,7 +253,7 @@
     "sudo-block": "3.0.0",
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
-    "tnp-cli": "~2.0.5",
+    "tnp-cli": "~2.0.6",
     "tnp-core": "~1.0.20",
     "tnp-db": "~0.0.33",
     "tnp-helpers": "~0.0.61",
