@@ -33,13 +33,13 @@
   },
   "lastBuildTagHash": "a458f6c1c5c082521340e7d4891c45b5e2e81c3f",
   "name": "tnp-cli",
-  "version": "2.0.10",
+  "version": "2.0.11",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
     "chalk": "2.3.2",
     "command-exists": "1.2.2",
-    "tnp-config": "~1.0.9"
+    "tnp-config": "~1.0.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "12.2.8",
@@ -205,7 +205,7 @@
     "ng-packagr": "5.7.1",
     "ng-talkback": "~2.4.20",
     "ng2-file-upload": "1.3.0",
-    "ng2-logger": "~8.0.11",
+    "ng2-logger": "~8.0.12",
     "ng2-rest": "~11.0.36",
     "ng4-icons": "~0.0.25",
     "ng4-modal": "~0.0.26",
@@ -254,7 +254,7 @@
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
     "tnp-cli": "~2.0.10",
-    "tnp-core": "~1.0.24",
+    "tnp-core": "~1.0.25",
     "tnp-db": "~0.0.33",
     "tnp-helpers": "~0.0.61",
     "tnp-models": "~0.0.32",
