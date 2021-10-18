@@ -33,12 +33,12 @@
   },
   "lastBuildTagHash": "99b59bb33c84b59b4ae6dc5dbe98c23498cebf18",
   "name": "tnp-cli",
-  "version": "2.0.14",
+  "version": "2.0.16",
   "license": "MIT",
   "main": "index.js",
   "dependencies": {
-    "chalk": "~2.3.2",
-    "command-exists": "~1.2.2",
+    "chalk": "2.3.2",
+    "command-exists": "1.2.2",
     "tnp-config": "~1.0.16"
   },
   "devDependencies": {
