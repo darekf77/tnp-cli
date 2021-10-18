@@ -33,7 +33,7 @@ export class CLI {
           return pkg.version ? `${n}@${pkg.version}` : n;
         })
         .join(' ');
-      console.log(chalk.red(`Missing npm dependencies.`))
+      Helpers.info('Installing missing dependencies...')
       const cmd = `npm install -g ${toInstall}`;
       Helpers.run(cmd).sync();
     }
@@ -59,17 +59,15 @@ export class CLI {
           return pkg.version ? `${n}@${pkg.version}` : n;
         })
         .join(' ');
-      console.log(chalk.red(`Missing npm dependencies.`))
+      Helpers.error(`Missing npm dependencies.`, true, true)
       const cmd = `npm install -g ${toInstall}`;
-      console.log(`Please run: ${chalk.green(cmd)}`)
-      process.exit(0)
+      Helpers.error(`Please run: ${chalk.green(cmd)}`, false, true);
     }
 
     globalDependencies.programs.forEach(p => {
       if (!commandExistsSync(p.name)) {
-        console.log(chalk.red(`Missing command line tool "${p.name}".`))
-        console.log(`Please install it from: ${chalk.green(p.website)}`)
-        process.exit(0)
+        Helpers.error(chalk.red(`Missing command line tool "${p.name}".`), false, false);
+        Helpers.error(`Please install it from: ${chalk.green(p.website)}`, false, false);
       }
     })
 
