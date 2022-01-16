@@ -17,7 +17,7 @@ export class CLI {
   public static chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = GlobalIsomorphicDependencies) {
-    Helpers.info(`INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
+    Helpers.info(`[tnp-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
     globalDependencies.npm.forEach(pkg => {
       if (!commandExistsSync(pkg.name)) {
@@ -37,7 +37,7 @@ export class CLI {
       const cmd = `npm install -g ${toInstall}`;
       Helpers.run(cmd).sync();
     }
-    Helpers.info(`INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
+    Helpers.info(`[tnp-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
   }
 
   /**
