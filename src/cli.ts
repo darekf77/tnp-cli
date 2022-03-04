@@ -8,6 +8,7 @@ import { ConfigModels, GlobalIsomorphicDependencies } from 'tnp-config';
 import chalk from 'chalk';
 import * as commandExist from 'command-exists';
 const commandExistsSync = commandExist.sync;
+const check = require("check-node-version");
 import isElevated from 'is-elevated';
 
 export class CLI {
@@ -78,6 +79,36 @@ export class CLI {
       process.exit(0)
     }
   }
+
+
+  minimalNodeVersionExistsGlobal(minimalNode: string) {
+    return new Promise<boolean>((resolve) => {
+      check(
+        { node: `>= ${minimalNode}`, },
+        (error, result) => {
+          if (error) {
+            Helpers.error(error, true, true)
+            resolve(false);
+            return;
+          } else if (result.isSatisfied) {
+            resolve(true);
+          } else {
+            Helpers.error("[tnp-cli] Some package version(s) failed!", true, true);
+
+            for (const packageName of Object.keys(result.versions)) {
+              if (!result.versions[packageName].isSatisfied) {
+                Helpers.error(`[tnp-cli] Missing ${packageName}.`, true, true);
+              }
+            }
+            resolve(false);
+          }
+        }
+      );
+    });
+
+
+  }
+
 }
 
 //#endregion
