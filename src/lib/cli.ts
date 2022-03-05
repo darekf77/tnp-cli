@@ -1,6 +1,6 @@
 import { Helpers } from 'tnp-core';
 if (Helpers.isBrowser) {
-  console.log(`This package is only for node backend`);
+  console.log(`[tnp-cli] This package is only for node backend`);
 }
 //#region @backend
 import { child_process } from 'tnp-core';
