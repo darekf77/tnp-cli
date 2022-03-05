@@ -8,7 +8,7 @@ import { ConfigModels, GlobalIsomorphicDependencies } from 'tnp-config';
 import chalk from 'chalk';
 import * as commandExist from 'command-exists';
 const commandExistsSync = commandExist.sync;
-const check = require("check-node-version");
+const check = require('check-node-version');
 import isElevated from 'is-elevated';
 
 export class CLI {
