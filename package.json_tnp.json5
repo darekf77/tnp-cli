@@ -1,0 +1,28 @@
+{
+  resources: ["README.md"],
+  overrided: {
+    ignoreDepsPattern: [],
+    includeAsDev: "*",
+    includeOnly: ["chalk", "command-exists", "tnp-config"],
+    dependencies: {},
+    linkedFolders: [],
+  },
+  linkedProjects: [],
+  libReleaseOptions: {
+    nodts: false,
+    obscure: false,
+    ugly: false,
+  },
+  isCoreProject: false,
+  useFramework: false,
+  type: "isomorphic-lib",
+  required: [],
+  version: "v3",
+  isGenerated: false,
+  requiredServers: [],
+  license: "MIT",
+  private: false,
+  main: "index.js",
+  workerPlugins: {},
+  additionalNpmNames: ["firedev-cli"],
+}
