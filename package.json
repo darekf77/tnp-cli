@@ -1,4 +1,37 @@
 {
+  "tnp": {
+    "resources": [
+      "README.md"
+    ],
+    "overrided": {
+      "ignoreDepsPattern": [],
+      "includeAsDev": "*",
+      "includeOnly": [
+        "chalk",
+        "command-exists",
+        "tnp-config"
+      ],
+      "dependencies": {},
+      "linkedFolders": []
+    },
+    "linkedProjects": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false
+    },
+    "isCoreProject": false,
+    "useFramework": false,
+    "type": "isomorphic-lib",
+    "required": [],
+    "version": "v3",
+    "isGenerated": false,
+    "requiredServers": [],
+    "license": "MIT",
+    "private": false,
+    "main": "index.js",
+    "workerPlugins": {}
+  },
   "lastBuildTagHash": "1b929cd2145417c9dfd31e6f0d05ac737ddc0714",
   "name": "tnp-cli",
   "version": "2.0.21",
@@ -9,5 +42,6 @@
     "command-exists": "1.2.2",
     "tnp-config": "~1.0.23"
   },
-  "private": false
+  "private": false,
+  "devDependencies": {}
 }
