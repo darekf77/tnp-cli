@@ -8,5 +8,6 @@
     "command-exists": "1.2.2",
     "tnp-config": "~1.0.30"
   },
-  "private": false
+  "private": false,
+  "devDependencies": {}
 }
