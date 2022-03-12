@@ -9,5 +9,6 @@
     "tnp-config": "~13.0.1"
   },
   "private": false,
-  "main": "index.js"
+  "main": "index.js",
+  "devDependencies": {}
 }
