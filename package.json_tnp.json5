@@ -2,7 +2,7 @@
   resources: ["README.md"],
   overrided: {
     ignoreDepsPattern: [],
-    includeAsDev: "*",
+    includeAsDev: [],
     includeOnly: ["chalk", "command-exists", "tnp-config"],
     dependencies: {},
     linkedFolders: [],
