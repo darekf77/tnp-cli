@@ -1,12 +1,12 @@
 {
   "lastBuildTagHash": "1b929cd2145417c9dfd31e6f0d05ac737ddc0714",
   "name": "tnp-cli",
-  "version": "13.0.9",
+  "version": "13.0.10",
   "license": "MIT",
   "dependencies": {
     "chalk": "2.3.2",
     "command-exists": "1.2.2",
-    "tnp-config": "~13.0.13"
+    "tnp-config": "~13.0.14"
   },
   "private": false,
   "main": "index.js",
@@ -215,7 +215,7 @@
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
     "tnp-cli": "~13.0.8",
-    "tnp-core": "~13.0.30",
+    "tnp-core": "~13.0.31",
     "tnp-db": "~13.0.18",
     "tnp-helpers": "~13.0.15",
     "tnp-models": "~13.0.11",
@@ -231,7 +231,7 @@
     "underscore": "1.9.1",
     "uuid": "8.3.2",
     "validator": "9.2.0",
-    "vpn-split": "13.0.7",
+    "vpn-split": "13.0.13",
     "watch": "1.0.2",
     "zone.js": "~0.11.4"
   }
