@@ -1,12 +1,12 @@
 {
   "lastBuildTagHash": "444edb7b0a9da452778a7bc488fc9619166b4b85",
   "name": "tnp-cli",
-  "version": "13.0.10",
+  "version": "13.0.11",
   "license": "MIT",
   "dependencies": {
     "chalk": "2.3.2",
     "command-exists": "1.2.2",
-    "tnp-config": "~13.0.14"
+    "tnp-config": "~13.0.15"
   },
   "private": false,
   "main": "index.js",
@@ -167,7 +167,7 @@
     "mkdirp": "0.5.1",
     "mocha": "5.2.0",
     "moment": "2.22.2",
-    "morphi": "~13.0.17",
+    "morphi": "~13.0.20",
     "ng-packagr": "13.0.0",
     "ng-talkback": "~13.0.8",
     "ng2-logger": "~13.0.9",
@@ -215,7 +215,7 @@
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
     "tnp-cli": "~13.0.10",
-    "tnp-core": "~13.0.31",
+    "tnp-core": "~13.0.34",
     "tnp-db": "~13.0.19",
     "tnp-helpers": "~13.0.16",
     "tnp-models": "~13.0.12",
