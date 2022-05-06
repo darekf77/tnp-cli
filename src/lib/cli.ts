@@ -44,7 +44,7 @@ export class CLI {
   /**
    * Check if global system tools are available for isomorphic app development
    */
-  public static checkEnvironment(globalDependencies: ConfigModels.GlobalDependencies = GlobalIsomorphicDependencies) {
+  public static checkEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
     globalDependencies.npm.forEach(pkg => {
       if (!commandExistsSync(pkg.name)) {
