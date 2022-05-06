@@ -4,7 +4,7 @@ if (Helpers.isBrowser) {
 }
 //#region @backend
 import { child_process } from 'tnp-core';
-import { ConfigModels, GlobalIsomorphicDependencies } from 'tnp-config';
+import { ConfigModels, config } from 'tnp-config';
 import chalk from 'chalk';
 import * as commandExist from 'command-exists';
 const commandExistsSync = commandExist.sync;
@@ -17,7 +17,7 @@ export class CLI {
   public static commandExistsSync = commandExistsSync;
   public static chalk = chalk;
 
-  public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = GlobalIsomorphicDependencies) {
+  public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
     Helpers.info(`[tnp-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
     globalDependencies.npm.forEach(pkg => {
