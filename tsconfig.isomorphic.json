@@ -4,13 +4,13 @@
     "declaration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "moduleResolution": "node",
     "module": "commonjs",
     "skipLibCheck": true,
     "sourceMap": true,
     "target": "es5",
+    "downlevelIteration": true,
     "typeRoots": [
       "node_modules/@types"
     ],
