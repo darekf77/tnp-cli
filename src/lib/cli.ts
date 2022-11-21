@@ -9,6 +9,7 @@ import chalk from 'chalk';
 import * as commandExist from 'command-exists';
 const commandExistsSync = commandExist.sync;
 const check = require('check-node-version');
+// @ts-ignore
 import isElevated from 'is-elevated';
 
 export class CLI {
