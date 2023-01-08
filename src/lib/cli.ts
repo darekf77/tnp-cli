@@ -1,13 +1,16 @@
 import { Helpers } from 'tnp-core';
 if (Helpers.isBrowser) {
-  console.log(`[tnp-cli] This package is only for node backend`);
+  console.log(`[firedev-cli] This package is only for node backend`);
 }
 //#region @backend
 import { child_process } from 'tnp-core';
 import { ConfigModels, config } from 'tnp-config';
 import chalk from 'chalk';
-import * as commandExist from 'command-exists';
-const commandExistsSync = commandExist.sync;
+import { checkSyncIfCommandExists } from './command-exists';
+console.log({
+  sync: checkSyncIfCommandExists
+})
+const commandExistsSync = checkSyncIfCommandExists;
 const check = require('check-node-version');
 // @ts-ignore
 import isElevated from 'is-elevated';
@@ -19,7 +22,7 @@ export class CLI {
   public static chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
-    Helpers.info(`[tnp-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
+    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
     globalDependencies.npm.forEach(pkg => {
       if (!commandExistsSync(pkg.name)) {
@@ -39,7 +42,7 @@ export class CLI {
       const cmd = `npm install -g ${toInstall}`;
       Helpers.run(cmd).sync();
     }
-    Helpers.info(`[tnp-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
+    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
   }
 
   /**
@@ -75,7 +78,7 @@ export class CLI {
 
 
     try {
-      child_process.execSync(`check-node-version --node ">= 9.2"`, { stdio: [0, 1, 2] })
+      child_process.execSync(`check-node-version --node ">= 13"`, { stdio: [0, 1, 2] })
     } catch (error) {
       process.exit(0)
     }
@@ -94,11 +97,11 @@ export class CLI {
           } else if (result.isSatisfied) {
             resolve(true);
           } else {
-            Helpers.error("[tnp-cli] Some package version(s) failed!", true, true);
+            Helpers.error("[firedev-cli] Some package version(s) failed!", true, true);
 
             for (const packageName of Object.keys(result.versions)) {
               if (!result.versions[packageName].isSatisfied) {
-                Helpers.error(`[tnp-cli] Missing ${packageName}.`, true, true);
+                Helpers.error(`[firedev-cli] Missing ${packageName}.`, true, true);
               }
             }
             resolve(false);
