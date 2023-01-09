@@ -3,13 +3,10 @@ if (Helpers.isBrowser) {
   console.log(`[firedev-cli] This package is only for node backend`);
 }
 //#region @backend
-import { child_process } from 'tnp-core';
+import { child_process, chalk } from 'tnp-core';
 import { ConfigModels, config } from 'tnp-config';
-import chalk from 'chalk';
 import { checkSyncIfCommandExists } from './command-exists';
-console.log({
-  sync: checkSyncIfCommandExists
-})
+
 const commandExistsSync = checkSyncIfCommandExists;
 const check = require('check-node-version');
 // @ts-ignore
