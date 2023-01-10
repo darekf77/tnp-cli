@@ -4,6 +4,7 @@ if (Helpers.isBrowser) {
 }
 //#region @backend
 import { child_process, chalk } from 'tnp-core';
+export { chalk } from 'tnp-core';
 import { ConfigModels, config } from 'tnp-config';
 import { checkSyncIfCommandExists } from './command-exists';
 
@@ -16,8 +17,8 @@ export class CLI {
 
   public static isElevated = isElevated;
   public static commandExistsSync = commandExistsSync;
-  // @ts-ignore
-  public static chalk = chalk as typeof chalk;
+
+  public static chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
     Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
