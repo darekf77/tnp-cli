@@ -16,6 +16,7 @@ export class CLI {
 
   public static isElevated = isElevated;
   public static commandExistsSync = commandExistsSync;
+  // @ts-ignore
   public static chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
