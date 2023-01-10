@@ -3,6 +3,7 @@ if (Helpers.isBrowser) {
   console.log(`[firedev-cli] This package is only for node backend`);
 }
 //#region @backend
+import { Chalk } from 'chalk';
 import { child_process, chalk } from 'tnp-core';
 export { chalk } from 'tnp-core';
 import { ConfigModels, config } from 'tnp-config';
@@ -18,7 +19,7 @@ export class CLI {
   public static isElevated = isElevated;
   public static commandExistsSync = commandExistsSync;
 
-  public static chalk = chalk;
+  public static chalk: Chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
     Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
