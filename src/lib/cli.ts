@@ -42,7 +42,7 @@ export class CLI {
       const cmd = `npm install -g ${toInstall}`;
       Helpers.run(cmd, { output: (config.frameworkName === 'tnp'), biggerBuffer: true }).sync();
     }
-    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done)`)
+    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
   }
 
   /**
