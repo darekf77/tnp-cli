@@ -1,7 +1,7 @@
 {
   "lastBuildTagHash": "95e0ef087166e9033f7ee105a5d6a0a396f381fa",
   "name": "tnp-cli",
-  "version": "13.1.42",
+  "version": "13.1.43",
   "license": "MIT",
   "dependencies": {
     "chalk": "2.3.2",
