@@ -22,7 +22,7 @@ export class CLI {
   public static chalk: Chalk = chalk;
 
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
-    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...`)
+    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV... it will take a few minutes`)
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
     globalDependencies.npm.forEach(pkg => {
       if (!commandExistsSync(pkg.name)) {
@@ -40,9 +40,9 @@ export class CLI {
         .join(' ');
       Helpers.info('Installing missing dependencies...')
       const cmd = `npm install -g ${toInstall}`;
-      Helpers.run(cmd).sync();
+      Helpers.run(cmd, { output: (config.frameworkName === 'tnp'), biggerBuffer: true }).sync();
     }
-    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
+    Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done)`)
   }
 
   /**
