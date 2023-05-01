@@ -1,5 +1,5 @@
 {
-  "lastBuildTagHash": "16027c31e971f93b7386e045a755e009c584c93a",
+  "lastBuildTagHash": "43887440bf04732e39b41e3a5298f606c3dce538",
   "name": "tnp-cli",
   "version": "13.1.56",
   "license": "MIT",
@@ -226,7 +226,7 @@
     "sudo-block": "3.0.0",
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
-    "tnp-cli": "~13.1.55",
+    "tnp-cli": "~13.1.56",
     "tnp-core": "~13.2.14",
     "tnp-db": "~13.1.18",
     "tnp-helpers": "~13.1.29",
