@@ -1,4 +1,45 @@
 {
+  "tnp": {
+    "resources": [
+      "README.md"
+    ],
+    "overrided": {
+      "ignoreDepsPattern": [],
+      "includeAsDev": [],
+      "includeOnly": [
+        "chalk",
+        "command-exists",
+        "tnp-config"
+      ],
+      "dependencies": {},
+      "linkedFolders": [],
+      "npmFixes": []
+    },
+    "linkedProjects": [],
+    "smartContainerBuildTarget": "",
+    "linkedRepos": [],
+    "libReleaseOptions": {
+      "nodts": false,
+      "obscure": false,
+      "ugly": false,
+      "includeNodeModules": false
+    },
+    "smartContainerTarget": "",
+    "type": "isomorphic-lib",
+    "isCoreProject": false,
+    "useFramework": false,
+    "required": [],
+    "version": "v4",
+    "isGenerated": false,
+    "requiredServers": [],
+    "license": "MIT",
+    "private": false,
+    "main": "index.js",
+    "workerPlugins": {},
+    "additionalNpmNames": [
+      "firedev-cli"
+    ]
+  },
   "lastBuildTagHash": "e5c185d8a0335b4558b47e8204eb0ae92f80404d",
   "name": "tnp-cli",
   "version": "16.0.4",
@@ -9,7 +50,6 @@
     "tnp-config": "~16.0.4"
   },
   "private": false,
-  "main": "index.js",
   "devDependencies": {
     "@angular-devkit/build-angular": "~16.0.5",
     "@angular-devkit/core": "~16.0.5",
