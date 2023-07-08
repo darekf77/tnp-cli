@@ -1,11 +1,11 @@
-import { Helpers } from 'tnp-core';
-if (Helpers.isBrowser) {
-  console.log(`[firedev-cli] This package is only for node backend`);
-}
-//#region @backend
-import { Chalk } from 'chalk';
-import { child_process, chalk } from 'tnp-core';
+export { Chalk } from 'chalk';
+import { Helpers, chalk } from 'tnp-core';
 export { chalk } from 'tnp-core';
+
+//#region @backend
+
+import { child_process } from 'tnp-core';
+
 import { ConfigModels, config } from 'tnp-config';
 import { checkSyncIfCommandExists } from './command-exists';
 
@@ -13,14 +13,19 @@ const commandExistsSync = checkSyncIfCommandExists;
 const check = require('check-node-version');
 // @ts-ignore
 import isElevated from 'is-elevated';
+//#endregion
+
 
 export class CLI {
 
+  //#region @backend
   public static isElevated = isElevated;
   public static commandExistsSync = commandExistsSync;
+  //#endregion
 
-  public static chalk: Chalk = chalk;
+  public static chalk = chalk;
 
+  //#region @backend
   public static installEnvironment(globalDependencies: ConfigModels.GlobalDependencies = config.required) {
     Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV... it will take a few minutes`)
     const missingNpm: ConfigModels.GlobalNpmDependency[] = [];
@@ -44,7 +49,9 @@ export class CLI {
     }
     Helpers.info(`[firedev-cli] INSTALLING GLOBAL ENVIRONMENT FOR FIREDEV...done`)
   }
+  //#endregion
 
+  //#region @backend
   /**
    * Check if global system tools are available for isomorphic app development
    */
@@ -83,8 +90,10 @@ export class CLI {
       process.exit(0)
     }
   }
+  //#endregion
 
 
+  //#region @backend
   minimalNodeVersionExistsGlobal(minimalNode: string) {
     return new Promise<boolean>((resolve) => {
       check(
@@ -109,10 +118,8 @@ export class CLI {
         }
       );
     });
-
-
   }
+  //#endregion
 
 }
 
-//#endregion
