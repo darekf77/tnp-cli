@@ -42,12 +42,12 @@
   },
   "lastBuildTagHash": "14133c0c0d26ec7b44ba031e1ed627b07336e0e9",
   "name": "tnp-cli",
-  "version": "16.0.6",
+  "version": "16.0.7",
   "license": "MIT",
   "dependencies": {
     "chalk": "2.3.2",
     "command-exists": "1.2.2",
-    "tnp-config": "~16.0.13"
+    "tnp-config": "~16.0.18"
   },
   "private": false,
   "devDependencies": {
@@ -293,7 +293,7 @@
     "task.js": "0.1.5",
     "threads": "1.7.0",
     "tnp-cli": "~16.0.6",
-    "tnp-core": "~16.0.14",
+    "tnp-core": "~16.0.15",
     "tnp-db": "~16.0.27",
     "tnp-helpers": "~16.0.9",
     "tnp-models": "~16.0.36",
