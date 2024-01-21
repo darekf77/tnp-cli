@@ -40,7 +40,7 @@
       "firedev-cli"
     ]
   },
-  "lastBuildTagHash": "1d1b82002d90c7ae090c3d43fafa254e00d966db",
+  "lastBuildTagHash": "5e554831747c91611e42009138db4d0a0d734253",
   "name": "tnp-cli",
   "version": "16.5.7",
   "license": "MIT",
@@ -301,7 +301,7 @@
     "systeminformation": "3.45.7",
     "task.js": "0.1.5",
     "threads": "1.7.0",
-    "tnp-cli": "~16.5.6",
+    "tnp-cli": "~16.5.7",
     "tnp-core": "~16.5.13",
     "tnp-db": "~16.5.7",
     "tnp-helpers": "~16.5.8",
