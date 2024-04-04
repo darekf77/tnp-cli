@@ -1,4 +1,1 @@
-// export * from './cli';
-export function adasdasd(){
-
-}
+export * from './cli';
