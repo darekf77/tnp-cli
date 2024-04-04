@@ -1,1 +1,4 @@
-export * from './cli';
+// export * from './cli';
+export function adasdasd(){
+
+}
