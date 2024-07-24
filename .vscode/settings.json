@@ -107,5 +107,6 @@
   "prettier.enable": true,
   "editor.suggest.snippetsPreventQuickSuggestions": false,
   "editor.inlineSuggest.enabled": true,
-  "prettier.endOfLine": "auto"
+  "prettier.endOfLine": "auto",
+  "prettier.prettierPath": "./node_modules/prettier"
 }

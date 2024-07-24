@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.isomorphic.json",
+  "compilerOptions": {
+    "strictNullChecks": false,
+    "rootDir": "./src",
+    "paths": {
+      "tnp-cli": [
+        "./src/lib"
+      ],
+      "tnp-cli/*": [
+        "./src/lib/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "src/assets"
+  ]
+}
