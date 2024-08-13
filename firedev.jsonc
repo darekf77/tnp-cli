@@ -7,7 +7,7 @@
     "includeOnly": ["chalk", "command-exists", "tnp-config"],
     "dependencies": {},
     "linkedFolders": [],
-    "npmFixes": [],
+    "npmFixes": []
   },
 
   "smartContainerBuildTarget": "",
@@ -21,7 +21,7 @@
     "cliBuildNoDts": false,
     "cliBuildObscure": false,
     "cliBuildIncludeNodeModules": false,
-    "cliBuildUglify": false,
+    "cliBuildUglify": false
   },
 
   "smartContainerTarget": "",
@@ -29,12 +29,12 @@
   "isCoreProject": false,
   "useFramework": false,
   "required": [],
-  "version": "v16",
+  "version": "v18",
   "isGenerated": false,
   "requiredServers": [],
   "license": "MIT",
   "private": false,
   "main": "index.js",
   "workerPlugins": {},
-  "additionalNpmNames": ["firedev-cli"],
+  "additionalNpmNames": ["firedev-cli"]
 }
